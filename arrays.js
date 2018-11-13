@@ -63,7 +63,7 @@ console.log('arrays!!!')
 // However, after you have sorted an array, you can use the index to obtain the highest and lowest values.
 // Sorting ascending: 
                         // var points = [40, 100, 1, 5, 25, 10];
-                        // points.sort(function(a, b){return a - b}); // reverse the logic for descending (b-a)
+                        // points.sort(function(a, b){return a - b}); // reverse the logic for descending (b-a) or add method .reverse()
                         // now points[0] contains the lowest value
                         // and points[points.length-1] contains the highest value
 // Using Math.max() /Math.min() on an Array
@@ -91,27 +91,31 @@ console.log('arrays!!!')
 
 let numsArr = [13,45,1,2,3,4,5,100,90,80]
 
-console.log(Math.min(...numsArr));
 
 let strArr = ['a', 'b', 'c', 'd', 'e'];
 
 // function checkAdult(age) {
-//     return age >= 18;
-// }
+    //     return age >= 18;
+    // }
+    
+    // console.log(numsArr.some(checkAdult))
+    
+    
+    // console.log(strArr.splice(2,2)); // returns c and d 
+    // console.log(strArr) // returns without c and d
+    
+    // console.log(strArr.slice(1,3)) //returns b and c
+    // console.log(strArr) //returns the still complete array
+    
+    // var points = [40, 100, 1, 5, 25, 10];
+    // console.log(points.sort(function(a, b){return a - b}));
+    
+    // function myArrayMax(arr) {
+        //     return Math.max.apply(null, arr);
+        // }
+        // console.log(myArrayMax(numsArr));
+        
+        
+// console.log(Math.max(...numsArr));
 
-// console.log(numsArr.some(checkAdult))
-
-
-// console.log(strArr.splice(2,2)); // returns c and d 
-// console.log(strArr) // returns without c and d
-
-// console.log(strArr.slice(1,3)) //returns b and c
-// console.log(strArr) //returns the still complete array
-
-// var points = [40, 100, 1, 5, 25, 10];
-// console.log(points.sort(function(a, b){return a - b}));
-
-// function myArrayMax(arr) {
-//     return Math.max.apply(null, arr);
-// }
-// console.log(myArrayMax(numsArr));
+// console.log(numsArr.sort((a,b) => {return a-b})[numsArr.length-1]);
