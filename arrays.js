@@ -6,6 +6,10 @@ console.log('arrays!!!')
 // array.toString()
 // The JavaScript method toString() converts an array to a string of (comma separated) array values.
 
+// array.toString()
+// JavaScript automatically converts an array to a comma separated string when a primitive value is expected.
+
+
 // array.join()
 // The join() method also joins all array elements into a string.
 // It behaves just like toString(), but in addition you can specify the separator:
@@ -38,9 +42,6 @@ console.log('arrays!!!')
 // The slice() method can take two arguments like slice(1, 3).
 // The method then selects elements from the start argument, and up to (but not including) the end argument.
 // If the end argument is omitted, the slice() method slices out the rest of the array.
-
-// array.toString()
-// JavaScript automatically converts an array to a comma separated string when a primitive value is expected.
 
 // array.sort()
 // The sort() method sorts an array alphabetically:
@@ -87,12 +88,31 @@ console.log('arrays!!!')
                         //     if (x > y) {return 1;}
                         //     return 0;
                         // });
+
+// The reduce() method is used to apply a function to each element in the array to reduce the array to a single value.
 //-----------------------------------------------------------------------------------------------
 
-let numsArr = [13,45,1,2,3,4,5,100,90,80]
+let numsArr = [13,45,1,2,3,4,5,100,90,80];
+let sum = null;
 
+// for(let i = 0; i < numsArr.length; i++ ) {
+//     sum += numsArr[i]
+//     console.log(sum)
+// }
 
-let strArr = ['a', 'b', 'c', 'd', 'e'];
+// console.log(numsArr.reduce((a, b) => a + b))
+
+// function simpleArraySum(ar) {
+//     for (let i = 0; i < ar.length; i++) {
+//         sum += ar[i]
+//     }
+//     return sum;
+// }
+
+// console.log('simple -->', simpleArraySum(numsArr))
+
+let strArr = ['julius', 'reglado'].toString();
+console.log(strArr);
 
 // function checkAdult(age) {
     //     return age >= 18;

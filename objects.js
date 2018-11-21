@@ -3,12 +3,13 @@ console.log('objects!!');
 const obj1 = {
     name: "julius",
     lname: "regalado",
-    getfirstname() {
+    get fullname() {
         console.log(`${this.name} ${this.lname}`)
     }
 }
 
-obj1.getfirstname();
+// obj1.getfirstname();
+console.log(obj1)
 
 // let objClone = Object.assign(obj1);
 // objClone.getfirstname()
@@ -44,36 +45,36 @@ obj1.getfirstname();
 
 // console.log(objA.get);
 
-class Person {
-    constructor(name, age) {
-        this.name = name
-        this.age = age
-    };
-    getAge() {
-        return this.age
-    };
-};
+// class Person {
+//     constructor(name, age) {
+//         this.name = name
+//         this.age = age
+//     };
+//     getAge() {
+//         return this.age
+//     };
+// };
 
-let person1 = new Person("Julius",33)
+// let person1 = new Person("Julius",33)
 
-class Employee extends Person {
-    constructor(name, age, position) {
-        super(name,age);
-        this.position = position
-    };
-    getC() {
-        return this.position
-    };
-};
+// class Employee extends Person {
+//     constructor(name, age, position) {
+//         super(name,age);
+//         this.position = position
+//     };
+//     getC() {
+//         return this.position
+//     };
+// };
 
-let employee1 = new Employee('Julius')
-employee1.b = 45;
-console.log(person1)
-console.log(employee1)
+// let employee1 = new Employee('Julius')
+// employee1.b = 45;
+// console.log(person1)
+// console.log(employee1)
 
-// console.log(Number.MAX_SAFE_INTEGER)
-// console.log(Number.MAX_SAFE_INTEGER)
+// // console.log(Number.MAX_SAFE_INTEGER)
+// // console.log(Number.MAX_SAFE_INTEGER)
 
-// console.log(9007199254740991 < Number.MAX_SAFE_INTEGER)
+// // console.log(9007199254740991 < Number.MAX_SAFE_INTEGER)
 
-console.log(Number)
+// console.log(Number)
